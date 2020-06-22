@@ -66,3 +66,7 @@ Your system is ready to brew.
 brew install python3
 ```
 で3.x系のpythonを入れてください。
+
+# Linux
+個人で使うPCのOSがLinuxという猛者にはpython環境のセットアップなど個別に説明しなくても大丈夫でしょう。
+`yum install` なり `sudo apt-get install`　なりで入れてください。 
