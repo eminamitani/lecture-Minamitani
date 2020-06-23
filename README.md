@@ -70,3 +70,16 @@ brew install python3
 # Linux
 個人で使うPCのOSがLinuxという猛者にはpython環境のセットアップなど個別に説明しなくても大丈夫でしょう。
 `yum install` なり `sudo apt-get install`　なりで入れてください。 
+
+
+# 資料について
+各項目のサンプルコードと資料はJupyter Notebook形式で書いています。
+github上でレンダリングされてグラフ等も出力されるはずですが、うまく行かないときは
+https://nbviewer.jupyter.org/
+に各資料のURLをいれて表示させてください。
+gitが使えるなら、自分のPC上の適当な空のフォルダで、
+```
+git clone git@github.com:eminamitani/lecture-ims.git
+```
+のコマンドで手元に落としてきてVScodeのpython拡張を使うなどして、
+Jupyter notebookとして開いて確認するのも手っ取り早いです。
