@@ -3,11 +3,11 @@
 最近の理論化学・物理はほぼほぼシミュレーションを必要とします。
 シミュレーションをするにはある程度プログラミングの知識があったほうがよいですし、
 シュミュレーションで出てくる結果を解析するのを人力でやるのはあまりにも大変なので簡単な処理スクリプトは書けたほうがよいです。
-また、最近は実験もオートメーション化なども進められていますし、今後実験の人もプログラムができるとなにかと便利だと思います。
+また、最近は実験もオートメーション化も進められていますし、今後実験の人もプログラムができるとなにかと便利だと思います。
 というわけで、今回の基礎物理化学IIではちょっとしたプログラム作成と数値シミュレーションで親しむ物理化学の基礎、という方向性で行きたいと思います。
 
 # 評価方法
-講義中に実習課題を出すので、それの実行結果を元にレポートを提出してもらいます。
+講義中に実習課題を出すので、それの実行結果を実習時間中に見せるか、後でスクショ等で送ってください。
 
 # シミュレーションのための環境
 世にプログラミング言語はあれこれあるのですが、今回はひとまずpythonを使ってみたいと思います。pythonは1990年代初頭にグイド・ヴァンロッサムによって開発されたプログラミング言語の一つでシンプルでありながら豊富な機能をもつインタープリタ型言語です。言語そのものの便利さもですが、開発者が多く、多数のライブラリが備わっているので、ちょっと複雑なことをしたい時でもライブラリをインポートするだけでいろんなことができるのが一番の利点でしょう。代表的なものでは数値計算ライブラリの`numpy` や機械学習の`scikit-learn`などがあります。
@@ -66,6 +66,34 @@ Your system is ready to brew.
 brew install python3
 ```
 で3.x系のpythonを入れてください。
+今回は`numpy` と`matplotlib`も使うので、python3に付随してくる`pip3`でそれらのライブラリもインストールしておきます。
+```
+pip3 install numpy 
+pip3 install matplotlib 
+```
+### 開発環境
+WinPythonとちがって、Macでの上記手順ではエディタ（プログラムを書くツール）は自分で調達しないといけません。
+気合でテキストエディットで書くという手もありますが、サポートが充実している専用ツールを使ったほうが快適でしょう。
+使ってみた感じ、`VScode`か`PyCharm`が便利です。とりあえず`VScode`を紹介しておきます。
+`VScode` のインストール自体は
+https://code.visualstudio.com/
+からOSに合うものを入れれば完了です。
+スクショ入りで手順を書いてくれてる人もいます。
+https://qiita.com/watamura/items/51c70fbb848e5f956fd6
+
+pythonの拡張機能を入れると、Jupyter notebookも開けます。拡張機能はVScodeの左下のボタンを押して出てくるメニューから
+Extensionsを押してクリックすると拡張機能管理画面が左側に立ち上がるので、pythonで検索してMicrosoft純正のpython用拡張機能を入れます。
+![](img/VScode.png)
+pythonのファイル（拡張子.py）やJupyter notebook（拡張子.ipynb）を認識すると
+自動でこの拡張機能がオンになりますが、pythonの実行環境を選ぶ必要があるかもしれません。
+その場合、View-> command palletから
+![](img/opencommand.png)
+コマンドの入力画面を開いて、
+![](img/select--python.png)
+```
+Python: Select interpreter
+```
+を入力して適したpython3系の実行環境を指定してください。
 
 # Linux
 個人で使うPCのOSがLinuxという猛者にはpython環境のセットアップなど個別に説明しなくても大丈夫でしょう。
@@ -74,12 +102,23 @@ brew install python3
 
 # 資料について
 各項目のサンプルコードと資料はJupyter Notebook形式で書いています。
-github上でレンダリングされてグラフ等も出力されるはずですが、うまく行かないときは
+github上でレンダリングされてグラフ等も出力されるはずですが、たまにうまく行かなかったり、数式が崩れたりするのでその場合は
 https://nbviewer.jupyter.org/
 に各資料のURLをいれて表示させてください。
 gitが使えるなら、自分のPC上の適当な空のフォルダで、
 ```
 git clone git@github.com:eminamitani/lecture-ims.git
 ```
-のコマンドで手元に落としてきてVScodeのpython拡張を使うなどして、
+のコマンドで資料のファイルをすべて手元に落としてきてVScodeのpython拡張を使うなどして、
 Jupyter notebookとして開いて確認するのも手っ取り早いです。
+
+内容としては
+1.  Python最低限の文法リスト　　https://github.com/eminamitani/lecture-ims/blob/master/PythonMinimum.ipynb
+2. ロジスティック写像のシミュレーション　　https://github.com/eminamitani/lecture-ims/blob/master/LogisticMap.ipynb
+3. イジング模型のモンテカルロシミュレーション　https://github.com/eminamitani/lecture-ims/blob/master/MonteCarlo.ipynb
+4. グラフェンの強束縛模型計算　https://github.com/eminamitani/lecture-ims/blob/master/Graphene.ipynb
+
+を用意してあります。
+課題は2.ロジスティック写像と3.モンテカルロシミュレーションの箇所に用意してあります。
+講義は一通りの説明をしますが、その後は自分のペースでサンプルコードを動かしたり、
+それを元に課題を進めてください。
