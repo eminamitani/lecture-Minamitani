@@ -83,13 +83,19 @@ https://qiita.com/watamura/items/51c70fbb848e5f956fd6
 
 pythonの拡張機能を入れると、Jupyter notebookも開けます。拡張機能はVScodeの左下のボタンを押して出てくるメニューから
 Extensionsを押してクリックすると拡張機能管理画面が左側に立ち上がるので、pythonで検索してMicrosoft純正のpython用拡張機能を入れます。
+
 ![](img/VScode.png)
+
 pythonのファイル（拡張子.py）やJupyter notebook（拡張子.ipynb）を認識すると
 自動でこの拡張機能がオンになりますが、pythonの実行環境を選ぶ必要があるかもしれません。
 その場合、View-> command palletから
+
 ![](img/opencommand.png)
+
 コマンドの入力画面を開いて、
+
 ![](img/select--python.png)
+
 ```
 Python: Select interpreter
 ```
@@ -98,6 +104,16 @@ Python: Select interpreter
 # Linux
 個人で使うPCのOSがLinuxという猛者にはpython環境のセットアップなど個別に説明しなくても大丈夫でしょう。
 `yum install` なり `sudo apt-get install`　なりで入れてください。 
+
+# なんか設定うまく行かない！とにかく手早く使ってみたい！
+`Google Colaboratory` を使いましょう。
+https://colab.research.google.com/notebooks/
+
+Googleアカウント持っていれば、なんも設定無しでブラウザ上でpythonの実行ができます。
+資料のコードをコピー＆ペーストすれば下図のように動きます。
+
+![](/img/colab.png)
+
 
 
 # 資料について
