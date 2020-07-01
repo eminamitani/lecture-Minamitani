@@ -19,10 +19,14 @@ Windowsでpython環境をすべて自前でセットアップするのはたま�
 
 よく知られているものの一つが `WinPython` です。
 
-https://winpython.github.io/　
-から
-WinPython 3.7 Downloadsのリンクに進み　https://github.com/winpython/winpython/releases/tag/2.3.20200530　　
-の下の方にある`Assets`部分から自分のハードウェア（64bit or 32bit）に合うものをダウンロードしてください。
+配布元はいくつかあるのですが、自分は
+
+https://sourceforge.net/projects/winpython/
+の
+https://sourceforge.net/projects/winpython/files/WinPython_3.8/3.8.3.0/Winpython64-3.8.3.0.exe/download　
+で試しました。
+自分のハードウェア（64bit or 32bit）に合うものをダウンロードしてください。
+かなりファイルが重いので自宅などで回線が細くて時間がかかる人は、ひとまず後述の`Google Colaboratory` などでpythonを動かしてみるといいと思います。
 ダウンロード＆インストールするときに、どのフォルダにインストールされたかはメモしておきましょう。（インストールの途中にどこに保存するか聞かれるので、そこでわかりやすい場所にしておくと良いかと思います）
 `WinPython`には`Spyder`というプログラムのエディタと、そこでの実行結果の表示が一体になった統合開発環境が同梱されてます。
 開くとこんな感じになるかと思います↓
