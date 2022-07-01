@@ -137,8 +137,12 @@ Jupyter notebookとして開いて確認するのも手っ取り早いです。
 2. ロジスティック写像のシミュレーション　　https://github.com/eminamitani/lecture-ims/blob/master/LogisticMap.ipynb
 3. イジング模型のモンテカルロシミュレーション　https://github.com/eminamitani/lecture-ims/blob/master/MonteCarlo.ipynb
 4. グラフェンの強束縛模型計算　https://github.com/eminamitani/lecture-ims/blob/master/Graphene.ipynb
+5. 機械学習の基礎　https://github.com/eminamitani/lecture-Minamitani/blob/master/ML.ipynb
+6. 分子系への機械学習応用　https://github.com/eminamitani/lecture-Minamitani/blob/master/ML_chemistry.ipynb
+7. 固体物理での機械学習応用：ニューラルネットワークポテンシャル　https://github.com/eminamitani/lecture-Minamitani/blob/master/SimpleNNP.ipynb
 
 を用意してあります。
-課題は2.ロジスティック写像と3.モンテカルロシミュレーションの箇所に用意してあります。
-講義は一通りの説明をしますが、その後は自分のペースでサンプルコードを動かしたり、
-それを元に課題を進めてください。
+
+ニューラルネットワークポテンシャルなどの機械学習関係については、資料も用意してあります。
+（https://github.com/eminamitani/lecture-Minamitani/blob/master/Introduction_MLpotential.pdf）
+
